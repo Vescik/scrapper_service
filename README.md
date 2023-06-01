@@ -8,7 +8,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 -->
 <div align="center">
 
-  <h1>CrispyService</h1>
+  <h1>CrispyScrap</h1>
   <span> Scrapping service for a <a href="https://github.com/Vescik/makdolan">Makdolan</a> app</span>
   <p></p>
   
@@ -16,10 +16,10 @@ Maybe you can mention me or this repo in the acknowledgements too
 <!-- Badges -->
 <p>
   <a href="https://github.com/Louis3797/awesome-readme-template/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/Louis3797/awesome-readme-template" alt="contributors" />
+    <img src="https://img.shields.io/github/contributors/Vescik/scrapper_service" alt="contributors" />
   </a>
   <a href="">
-    <img src="https://img.shields.io/github/last-commit/Louis3797/awesome-readme-template" alt="last update" />
+    <img src="https://img.shields.io/github/last-commit/Vescik/scrapper_service" alt="last update" />
   </a>
 </p>
    
@@ -55,15 +55,11 @@ Maybe you can mention me or this repo in the acknowledgements too
   
 
 <!-- About the Project -->
-## :star2: About the Project
-
-
-<!-- Screenshots -->
-### :camera: Screenshots
-
-<div align="center"> 
-  <img src="https://placehold.co/600x400?text=Your+Screenshot+here" alt="screenshot" />
-</div>
+## :hamburger: About the Project
+<p>CrispyScarpp is a service created in Node.js 
+    that offer daily updated McDonald products menu for 
+    <a href="https://github.com/Vescik/makdolan">Makdolan</a> app.
+</p>
 
 
 <!-- TechStack -->
