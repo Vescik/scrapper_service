@@ -29,14 +29,15 @@ const scrapData = async ()=> {
         const images = Array.from(document.querySelectorAll('div.product_thumb > a > img'));
         return images.map((img:any) => img.src);
       });
-
+      page.close();
       return{ products, productsImg}
     }
 
-const pushToMenu = async () => {
+const setProducts = async () => {
     const menu:Product[] = [];
     const {products, productsImg} = await scrapData();
     products.forEach((productText:string, index) => {
+
         const product:Product = {
             name: productText,
             image: productsImg[index],
@@ -44,7 +45,8 @@ const pushToMenu = async () => {
             type: "",
             size: ""
         }
+
         menu.push(product)
     })  
 }
-module.exports = pushToMenu
+module.exports = setProducts
