@@ -8,16 +8,12 @@ Maybe you can mention me or this repo in the acknowledgements too
 -->
 <div align="center">
 
-  <img src="assets/logo.png" alt="logo" width="200" height="auto" />
-  <h1>Makdolan Service</h1>
-  
-  <p>
-    Micro-services for Makdolan app:
-    <ul>
-      <li>Rest Api written in Node.js</li>
-      <li>Scrapper service</li>
-    </ul>
-  </p>
+  <h1>CrispyService</h1>
+  Scrapping service for a <a href="https://github.com/Vescik/makdolan">Makdolan</a> app
+  <span>
+
+  </span>
+  <p></p>
   
   
 <!-- Badges -->
