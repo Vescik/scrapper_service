@@ -9,7 +9,7 @@ const openWebPage = async (url:string) => {
 }
 
 
-const getProducts = async ()=> {
+const scrapProducts = async ()=> {
     const page = await openWebPage(url);
     
     const productTexts = await page.$$eval('.product_thumb-text', (elements) =>{
@@ -25,4 +25,4 @@ const getProducts = async ()=> {
 }
 
 
-getProducts().catch((err) => console.log(err));
+module.exports = scrapProducts
