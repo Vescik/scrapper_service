@@ -8,7 +8,7 @@ const app = express();
 connectToDatabase();
 
 // Start the scraping script
-scrapeScript;
+scrapeScript();
 
 // Additional app configurations and routes can be added here
 
