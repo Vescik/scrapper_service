@@ -34,8 +34,11 @@ const scrapData = async ()=> {
     }
 
 const setProducts = async () => {
+    console.log('test');
+    
     const menu:Product[] = [];
     const {products, productsImg} = await scrapData();
+    scrapData()
     products.forEach((productText:string, index) => {
 
         const product:Product = {
@@ -44,9 +47,10 @@ const setProducts = async () => {
             price: 0,
             type: "",
             size: ""
-        }
-
-        menu.push(product)
-    })  
+        }  
+       menu.push(product)
+    }) 
+    console.log(`Scraped ${menu.length} products`);
+    
 }
-module.exports = setProducts
+module.exports = {setProducts}
