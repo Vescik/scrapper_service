@@ -9,7 +9,13 @@ Maybe you can mention me or this repo in the acknowledgements too
 <div align="center">
 
   <h1>CrispyScrap</h1>
-  <span> Scrapping service for a <a href="https://github.com/Vescik/makdolan">Makdolan</a> app</span>
+
+
+  ## :hamburger: About the Project
+  <p>CrispyScarpp is a service created in Node.js that offer daily updated McDonald products menu for 
+    <a href="https://github.com/Vescik/makdolan">Makdolan</a>
+     app.
+  </p>
   <p></p>
   
   
@@ -32,11 +38,8 @@ Maybe you can mention me or this repo in the acknowledgements too
 # :notebook_with_decorative_cover: Table of Contents
 
 - [About the Project](#star2-about-the-project)
-  * [Screenshots](#camera-screenshots)
   * [Tech Stack](#space_invader-tech-stack)
   * [Features](#dart-features)
-  * [Color Reference](#art-color-reference)
-  * [Environment Variables](#key-environment-variables)
 - [Getting Started](#toolbox-getting-started)
   * [Prerequisites](#bangbang-prerequisites)
   * [Installation](#gear-installation)
@@ -45,21 +48,11 @@ Maybe you can mention me or this repo in the acknowledgements too
   * [Deployment](#triangular_flag_on_post-deployment)
 - [Usage](#eyes-usage)
 - [Roadmap](#compass-roadmap)
-- [Contributing](#wave-contributing)
-  * [Code of Conduct](#scroll-code-of-conduct)
-- [FAQ](#grey_question-faq)
-- [License](#warning-license)
-- [Contact](#handshake-contact)
-- [Acknowledgements](#gem-acknowledgements)
 
   
 
 <!-- About the Project -->
-## :hamburger: About the Project
-<p>CrispyScarpp is a service created in Node.js 
-    that offer daily updated McDonald products menu for 
-    <a href="https://github.com/Vescik/makdolan">Makdolan</a> app.
-</p>
+
 
 
 <!-- TechStack -->
