@@ -61,11 +61,11 @@ Maybe you can mention me or this repo in the acknowledgements too
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://www.typescriptlang.org/">Node.js</a></li>
-    <li><a href="https://nextjs.org/">Express.js</a></li>
-    <li><a href="https://nextjs.org/">TypeScript</a></li>
-    <li><a href="https://reactjs.org/">Node Cron</a></li>
-    <li><a href="https://tailwindcss.com/">Puppeteer</a></li>
+    <li><a >Node.js</a></li>
+    <li><a >Express.js</a></li>
+    <li><a >TypeScript</a></li>
+    <li><a >Node Cron</a></li>
+    <li><a >Puppeteer</a></li>
   </ul>
 </details>
 
@@ -73,8 +73,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 <details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-    <li><a href="https://mongoosejs.com/">Mongoose</a></li>
+    <li><a>Firestore</a></li>
   </ul>
 </details>
 
@@ -131,6 +130,5 @@ Install dependencies
 <!-- Roadmap -->
 ## :compass: Roadmap
 
-* [x] Working scrapping service with daily schedule
-* [ ] Implement database
-* [ ] Implement Rest API to communicate with Makdolan app
+* [*] Working scrapping service with daily schedule
+* [*] Implement database
