@@ -1,16 +1,28 @@
 // scrapingController.js
 const scraperService = require('../services/scraperService');
+const  { collection, addDoc } = require('firebase/firestore');
+import { db } from '../config/config'
 
 const scrapingController = {
   async scrapeAndSaveData(req, res) {
     try {
       const scrappedData = await scraperService.setProducts();
-      // TODO: Save the scrappedData to MongoDB using the appropriate model
+      scrappedData.forEach(async (product) => {
 
-     // res.status(200).json({ message: 'Scraped data saved to database' });
+        const productData = {
+          name: product.name,
+          image: product.image,
+          price: product.price,
+          type: product.type,
+          size: product.size,
+        };
+
+        const docRef = await addDoc(collection(db, "products"), productData);
+        console.log("Document written with ID: ", docRef.id);
+      });
+      
     } catch (error) {
       console.error('Error occurred while scraping and saving data:', error);
-    //  res.status(500).json({ error: 'Internal server error' });
     }
   }, 
 };

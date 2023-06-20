@@ -36,6 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 var _this = this;
 var puppeteer = require('puppeteer');
+var Product = require('../models/scrapedDataModel');
 var url = "https://mcdonalds.pl/nasze-menu/";
 var openWebPage = function (url) { return __awaiter(_this, void 0, void 0, function () {
     var browser, page;
@@ -79,6 +80,7 @@ var scrapData = function () { return __awaiter(_this, void 0, void 0, function (
 }); };
 var setProducts = function () { return __awaiter(_this, void 0, void 0, function () {
     var menu, _a, products, productsImg;
+    var _this = this;
     return __generator(this, function (_b) {
         switch (_b.label) {
             case 0:
@@ -86,18 +88,27 @@ var setProducts = function () { return __awaiter(_this, void 0, void 0, function
                 return [4 /*yield*/, scrapData()];
             case 1:
                 _a = _b.sent(), products = _a.products, productsImg = _a.productsImg;
-                products.forEach(function (productText, index) {
-                    var product = {
-                        name: productText,
-                        image: productsImg[index],
-                        price: 0,
-                        type: "",
-                        size: ""
-                    };
-                    menu.push(product);
-                });
-                return [2 /*return*/];
+                products.forEach(function (productText, index) { return __awaiter(_this, void 0, void 0, function () {
+                    var product;
+                    return __generator(this, function (_a) {
+                        product = new Product({
+                            name: productText,
+                            image: productsImg[index],
+                            price: 0,
+                            type: "",
+                            size: ""
+                        });
+                        try {
+                            menu.push(product);
+                        }
+                        catch (error) {
+                            console.log(error);
+                        }
+                        return [2 /*return*/];
+                    });
+                }); });
+                return [2 /*return*/, menu];
         }
     });
 }); };
-module.exports = setProducts;
+module.exports = { setProducts: setProducts };

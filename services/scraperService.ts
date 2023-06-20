@@ -1,7 +1,11 @@
 const puppeteer = require('puppeteer');
+const Product = require('../models/scrapedDataModel');
+
+
+
 const url = "https://mcdonalds.pl/nasze-menu/"
 
-interface Product {
+interface singleProduct {
     name: string;
     image: string;
     price: number;
@@ -33,24 +37,25 @@ const scrapData = async ()=> {
       return{ products, productsImg}
     }
 
-const setProducts = async () => {
-    console.log('test');
-    
-    const menu:Product[] = [];
+const setProducts = async () => {    
+    const menu:singleProduct[] = [];
     const {products, productsImg} = await scrapData();
-    scrapData()
-    products.forEach((productText:string, index) => {
 
-        const product:Product = {
+    products.forEach(async (productText:string, index) => {
+
+        const product:singleProduct = new Product( {
             name: productText,
             image: productsImg[index],
             price: 0,
             type: "",
             size: ""
+        })
+        try {
+            menu.push(product)
+        } catch (error) {
+            console.log(error)
         }  
-       menu.push(product)
     }) 
-    console.log(`Scraped ${menu.length} products`);
-    
+    return menu;
 }
 module.exports = {setProducts}

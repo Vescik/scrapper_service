@@ -93,9 +93,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 ### :bangbang: Prerequisites
 
 This project uses npm as package manager.
-Project require createing database config file in config folder.
-
-
+Project require to create database config file in config folder.
 
 <!-- Installation -->
 ### :gear: Installation
