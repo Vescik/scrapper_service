@@ -1,11 +1,9 @@
 const express = require('express');
 const scrapeScript = require('./scripts/scrapeScript');
-const connectToDatabase = require('./utils/db');
 
 const app = express();
 
 // Connect to the MongoDB database
-connectToDatabase();
 
 // Start the scraping script
 scrapeScript();
